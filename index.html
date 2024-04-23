@@ -1,0 +1,234 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+	
+    <title>BPP</title>
+    <style>
+       /* Basic CSS for styling the menu */
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #e4ffc4; /* Set background color for entire page */
+			height: 100%;
+			width: 100%;
+			max-width: 100%;
+        }
+		.container {
+			 position: absolute;
+			 width: 100%;
+			max-width: 100%;
+		}
+        nav {
+            background-color: #44513b; /* Set background color for the menu bar */
+            color: #fff; /* Set font color to white */
+            align-items: center; /* Align items vertically */
+			position: absolute;
+			z-index: 1;
+			width: 100%;
+			height: 15%;
+			max-width: 100%;
+			min-width: 100%;
+			vertical-align: middle;
+        }
+		
+        .menu-icon {
+            width: 10%; /* Limit the width of the icon */
+            height: auto; /* Maintain aspect ratio */
+            vertical-align: middle;
+            
+        }
+
+        nav a {
+            color: #fff;
+            text-decoration: none;
+            padding: 0 0.5%;
+            margin: 0 0.5%; /* Add space between menu items */
+            border-radius: 5px;
+            transition: background-color 0.3s;
+			top: 30px;
+			vertical-align: middle;
+			 align-items: center;
+			 position: relative;
+			 
+        }
+
+        nav a:hover {
+            background-color: #30382b; /* Set hover background color for menu items */
+        }
+		.container{
+			width: 100%;
+			max-width: 100%;
+			min-width: 100%;
+		}
+       
+
+        section-name {
+            background-color: #e4ffc4; /* Set background color for sections */
+            color: #7b1b4a;
+            padding-top: 50px; /* Adjust the padding top to shift text up */
+            padding-left: 75px;
+            margin-top: 20px;
+            font-family: Times New Roman, sans-serif; /* Set font family */
+            font-size: 30px; /* Set font size */
+            width: 40%; /* Limit the width to 40% of the screen */
+            height: 400px;
+            float: left; /* Float the section to the left */
+			position: relative;
+			z-index: 2;
+        }
+
+        section-image1 {
+            background-color: #d10057; /* Set background color for sections */
+
+            width: 17%; /* Limit the width to 40% of the screen */
+            height: 43.5%;
+            float: right; /* Float the section to the right */
+            background-image: url('images/IMG_0508.jpg'); /* Set the background image */
+            background-size: 100%; /* Ensure the background image covers the entire element */
+             background-position: 0px -10px;
+			position: absolute;
+			top: 280px;
+			left: 100px;
+			background-repeat: no-repeat;
+			z-index: 3;
+        }
+
+        section-image2 {
+            background-color: #d10057; /* Set background color for sections */
+            color: #7b1b4a;
+            width: 17%; /* Set the width to 100% of the screen */
+            height: 17%;
+            position: absolute;
+			z-index: 3;
+			top: 50px ;
+			left: 180px;
+			background-image: url('images/cm4.jpg'); /* Set the background image */
+            background-size: initial; /* Ensure the background image covers the entire element */
+            background-position: center; /* Center the background image */
+			background-repeat: no-repeat;
+        }
+
+		section-image3 {
+            background-color: #fff; /* Set background color for sections */
+            color: #7b1b4a;
+
+            margin-top:0%;
+			margin-left : 300px;
+            font-family: Times New Roman, sans-serif; /* Set font family */
+            font-size: 30px; /* Set font size */
+            width: 30%; /* Set the width to 100% of the screen */
+            height: 500px;
+            background-image: url('images/cm1.jpg'); /* Set the background image */
+            background-size: 300px 400px; /* Ensure the background image covers the entire element */
+            background-position: center ; /* Center the background image */
+			background-repeat: no-repeat;
+			position: absolute;
+
+        }
+
+        section-name::before {
+            content: "Bhandaru Phani Parasar"; /* Text inserted before the content of section-name */
+			font-family: Times New Roman, sans-serif; /* Set font family */
+            font-size: 50px; /* Set font size */
+        }
+
+		section-intro {
+            background-color: #e4ffc4; /* Set background color for sections */
+            color: #7b1b4a;
+            padding-top: 50px; /* Adjust the padding top to shift text up */
+            padding-left: 75px;
+            margin-top: 0px;
+            font-family: Times New Roman, sans-serif; /* Set font family */
+            font-size: 20px; /* Set font size */
+            width: 30%; /* Limit the width to 40% of the screen */
+            height: 400px;
+            float: left; /* Float the section to the left */
+			position: absolute;
+			z-index: 2;
+			top: 230px;
+			left: 340px;
+			text-align: justify;
+        }
+		.iisc-icon{
+			width: 70px; /* Limit the width of the icon */
+            height: auto; /* Maintain aspect ratio */
+            vertical-align: middle;
+            margin-left: 75px; /* Add some space between icon and text */
+			margin-top: 25px;
+		}
+		.pmrf-icon{
+			width: 80%; /* Limit the width of the icon */
+            height: 60%; /* Maintain aspect ratio */
+            vertical-align: middle;
+            margin-left: 150px; /* Add some space between icon and text */
+			margin-top: 25px;
+		}
+		
+		section-intro a {
+            color: #7b1b4a;
+        }
+
+		section-intro strongbold{
+			font-weight : bold;
+
+		}
+		section-intro strongitalic{
+
+			font-style: italic;
+		}
+
+		reasearch-button {
+
+            color: #f76f6b;
+			background-color: #f0e3bd;
+            text-decoration: none;
+			text-color :#c6d85b;
+            padding: 10px 20px;
+            position: absolute;
+            border-radius: 5px;
+            transition: background-color 0.3s;
+			top: 550px;
+			left: 440px;
+			z-index: 4;
+		}
+		reasearch-button:hover {
+            background-color: #f76f6b; /* Set hover background color for menu items */
+			text-color :#c6d85b;
+        }
+
+        h2 {
+            color: #44513b; /* Set font color for section headings */
+        }
+
+    </style>
+</head>
+<body>
+
+<nav>
+    <div class="menu-icon" > </div><!-- Icon and text on the left side -->
+    <!-- Menu links -->
+    <a href="index.html">Home</a>
+    <a href="publications.html">Publications</a>
+    <a href="resume.html">Resume</a>
+    <a href="contact.html">Contact</a>
+</nav>
+
+<!-- Sections for each menu item -->
+<section-name id="name"></section-name>
+<section-intro id="intro">I am a PhD student at the Indian Institute of Science, Bangalore, India. My area of research is theoretical condensed matter physics. I am currently interested in Fracton systems. To know more about my research, check out my <a href="publications.html">publications</a>.
+<!-- Below should come in new line-->
+<br></br><br> I am supported by <a href="https://www.pmrf.in/">PMRF scholarship</a>. </br>
+	<a href="https://iisc.ac.in/"><img class="iisc-icon" src="images/IISc_Master_Seal_Black.jpg" alt="Iisc Icon"></a>
+	<a href="https://www.pmrf.in/"><img class="iisc-icon" src="images/pmrf.png" alt="Pmrf Icon"></a> 
+</section-intro>
+<section-image1 id="pic1"></section-image1>
+
+<!--<section-image2 id="pic2"></section-image2>
+<section-image3 id="pic3"></section-image3> -->
+
+
+</body>
+</html>
