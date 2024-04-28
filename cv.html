@@ -4,6 +4,10 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>CV</title>
+    <script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
+  	<script id="MathJax-script" async
+            src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js">
+  	</script>
     <style>
         /* Basic CSS for styling the menu */
         body {
@@ -63,10 +67,94 @@
 			max-width: 100%;
 			min-width: 100%;
 		}
+    section-cv {
+            background-color: #e4ffc4; /* Set background color for sections */
+            color: #7b1b4a;
+            padding-top: 1%; /* Adjust the padding top to shift text up */
+            padding-left: 1%;
+            margin-top: 0px;
+            font-family: Times New Roman, sans-serif; /* Set font family */
+            font-size: 1.5vw; /* Set font size */
+            width: 70%; /* Limit the width to 40% of the screen */
+            height: 80%;
+            float: left; /* Float the section to the left */
+			      position: absolute;
+			      z-index: 2;
+			      top: 18%;
+			      left: 10%;
+			      text-align: justify;
+
+      }
+      section-cv years {
+              font-size: 1.5vw;
+              text-align: right;
+              float: right;
+          }
+
+
+		section-cv a {
+            color: #7b1b4a;
+        }
+
+    section-cv strongbold{
+          font-weight : bold;
+
+        }
+    section-cv strongitalic{
+
+          font-style: italic;
+        }
+    section-cv ul{
+
+          list-style-type: square;
+          margin-left: 1%;
+        }
+    section-cv li{
+
+          margin-bottom: 2%;
+        }
+
+    cv-button {
+
+      color: #f76f6b;
+			background-color: #f0e3bd;
+      text-decoration: none;
+			text-color : #b18f8f;
+      padding: 1% 2%;
+      position: absolute;
+      border-radius: 5px;
+      transition: background-color 0.3s;
+			top: 25%;
+			left: 50%;
+			z-index: 4;
+      width: 7%;
+		}
+		cv-button:hover {
+            background-color: #b18f8f; /* Set hover background color for menu items */
+			      color:#6b4d3d;
+;
+    }
+    cv-button a {
+            color:#6b4d3d;
+    			  text-decoration :none;
+    }
+
+    br {
+            display: block; /* makes it have a width */
+            content: ""; /* clears default height */
+            margin-top: 0;
+            margin-bottom: 1%; /* change this to whatever height you want it */
+    }
+
 
 
         h2 {
             color: #44513b; /* Set font color for section headings */
+            font-size: 2.5vw;
+        }
+        h3{
+           color: #3e1c33;
+           font-size: 1.75vw;
         }
 
     </style>
@@ -81,6 +169,43 @@
     <a href="cv.html">CV</a>
     <a href="contact.html">Contact</a>
 </nav>
+
+<section-cv id="cv">
+<h2>Short CV</h2>
+<h3>EDUCATION</h3>
+<strongbold>PhD Physics,</strongbold> Indian Institute of Science (IISc), Bangalore.<strongbold><span style="float:right;margin-right:20%">2023 - </span></strongbold><br></br>
+<!--<ul>
+  <li>Adviser: Prof. Vijay B. Shenoy, Department of Physics, IISc</li>
+  <li>Cumulative GPA: 9.9/10</li>
+</ul> -->
+<strongbold>MS-BS (Research),</strongbold> Indian Institute of Science (IISc), Bangalore.<strongbold><span style="float:right;margin-right:20%">2017 - 2022</span></strongbold><br></br>
+<!--<ul>
+  <li>Physics major</li>
+  <li>Cumulative GPA: 9.2/10</li>
+</ul> -->
+<h3>RESEARCH EXPERIENCE</h3>
+<strongbold>Delicate semimetals</strongbold><br></br>Supervisor: Prof. Vijay B. Shenoy<br></br>
+<ul>
+  <li>Constructed a novel class of semimetals, <strongitalic>Delicate semimetals,</strongitalic> protected by unstable homotopies.</li>
+  <li>Demonstrated this with a two-band nodal-line semimetal in four dimensions, carrying a Hopf flux.</li>
+  <li>Studied their remarkable Fermi-arc and drumhead surface states and generalized this construction using a three-
+dimensional example in class AIII.</li>
+</ul>
+<strongbold>Fermions coupled to \(\mathbb{Z}_2\) gauge fields</strongbold><br></br>Supervisor: Prof. Vijay B. Shenoy<br></br>
+<ul>
+  <li>Studied fermions coupled to \(\mathbb{Z}_2\) gauge fields and showed that modulation of fermion hopping realizes many Obstructed Atomic Insulators (OAIs).</li>
+  <li>Analyzed the stability of these phases to quantum fluctuations using Mean field and Renormalization techniques.</li>
+  <li>Found a rich phase diagram with many superfluids, and their evolution from the BEC regime to BCS regime occurs via a sequence of first order transitions.</li>
+</ul>
+<strongbold>Bachelor’s thesis,</strongbold>Indian Institute of Science<br></br>Supervisor: Prof. Vijay B. Shenoy<br></br>
+<!-- <ul>
+  <li>Worked on Phases and Phase Transitions of Fracton models in three dimensions.</li>
+  <li>Studied classical and quantum phase transitions in the X-cube and the Checkerboard models using perturabtion theory techniques and variational methods.</li>
+</ul> -->
+</section-cv>
+<cv-button><a href="files/CV_Apr2024.pdf" target="_blank">Detailed CV</a>
+</cv-button>
+
 
 
 </body>
